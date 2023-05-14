@@ -14,9 +14,6 @@ dir_suff_dict = {"Images": ['.jpg', '.jpeg', '.png', '.gif', '.tiff', '.ico', '.
                  "PYTHON": [".py", ".pyw"]}
 
 
-def main():
-    sort_func(path_dir)
-
 
 def normalize(name: str) -> str:
     CYRILLIC_SYMBOLS = 'абвгдеєжзіїйклмнопрстуфхцчшщьюя'
