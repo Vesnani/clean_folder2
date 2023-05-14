@@ -59,7 +59,7 @@ def sort_func(path_dir):
             os.rmdir(dir_p)
 
 
-if __name__ == "__main__":
+if __name__ == "__sort_func__":
     path_d = input('Введіть шлях до папки, яку треба посортувати: ')
     if not Path(path_d).exists():
         print('Папки не існує!')
