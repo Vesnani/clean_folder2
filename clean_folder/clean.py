@@ -13,7 +13,9 @@ dir_suff_dict = {"Images": ['.jpg', '.jpeg', '.png', '.gif', '.tiff', '.ico', '.
                  "EXE_MSI": [".exe", ".msi"],
                  "PYTHON": [".py", ".pyw"]}
 
-
+def main():
+  sort_func(path_dir)
+  
 def normalize(name: str) -> str:
     CYRILLIC_SYMBOLS = 'абвгдеєжзіїйклмнопрстуфхцчшщьюя'
     TRANSLATION = (
@@ -59,10 +61,10 @@ def sort_func(path_dir):
             os.rmdir(dir_p)
 
 
-if __name__ == "__sort_func__":
-    path_d = input('Введіть шлях до папки, яку треба посортувати: ')
-    if not Path(path_d).exists():
+if __name__ == "__main__":
+    path_dir = input('Введіть шлях до папки, яку треба посортувати: ')
+    if not Path(path_dir).exists():
         print('Папки не існує!')
     else:
-        sort_func(path_d)
+        sort_func(path_dir)
         print('Сортування завершено!')
